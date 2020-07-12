@@ -1,7 +1,7 @@
 import React from 'react'
 
 import classes from './BuildControl.module.css'
-console.log(classes)
+
 const buildControl = ( props ) => (
 
   <div className={classes.BuildControl}>

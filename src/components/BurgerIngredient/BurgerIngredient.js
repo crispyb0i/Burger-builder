@@ -18,7 +18,6 @@ class BurgerIngredient extends Component {
         break
       case ('bread-bottom'):
         ingredient = <div className={classes.BreadBottom}></div>
-        console.log(ingredient)
         break;
       case ('meat'):
         ingredient = <div className={classes.Meat}></div>

@@ -13,12 +13,15 @@ class OrderSummary extends Component {
     const ingredientSummary = Object.keys(this.props.ingredients)
       .map(igKey => {
         return (
-          <li key={igKey} style={{textTransform: 'capitalize',
-          justifyContent: 'center',
-          display: 'inline-block',
-          margin: '0 8px',
-          border: '1px solid #ccc',
-          padding: '5px'}}>
+          <li
+            key={igKey}
+            style={{
+              textTransform: 'capitalize',
+              justifyContent: 'center',
+              display: 'inline-block',
+              margin: '0 8px',
+              border: '1px solid #ccc',
+              padding: '5px'}}>
             <span style={{textTransform: 'capitalize'}}>
               {igKey}
             </span>

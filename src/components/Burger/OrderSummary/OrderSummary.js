@@ -13,7 +13,12 @@ class OrderSummary extends Component {
     const ingredientSummary = Object.keys(this.props.ingredients)
       .map(igKey => {
         return (
-          <li key={igKey}>
+          <li key={igKey} style={{textTransform: 'capitalize',
+          justifyContent: 'center',
+          display: 'inline-block',
+          margin: '0 8px',
+          border: '1px solid #ccc',
+          padding: '5px'}}>
             <span style={{textTransform: 'capitalize'}}>
               {igKey}
             </span>
@@ -22,10 +27,10 @@ class OrderSummary extends Component {
         )
       })
     return (
-      <div>
+      <div style={{textAlign:"center"}}>
         <h3>Your Order</h3>
         <p>A delicious burger with the following ingredients:</p>
-        <ul>
+        <ul style={{listStyleType: "none", display:"flex"}}>
           {ingredientSummary}
         </ul>
         <p><strong>Total Price: ${this.props.totalPrice.toFixed(2)}</strong></p>
